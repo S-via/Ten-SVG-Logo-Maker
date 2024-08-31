@@ -1,0 +1,19 @@
+{
+  "name": "ten-svg-logo-maker",
+  "version": "1.0.0",
+  "description": "To generate a logo using Node.js, command line and saving it as an SVG file",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
