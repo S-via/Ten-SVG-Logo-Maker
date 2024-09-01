@@ -14,7 +14,7 @@ const fs = require('fs');
 inquirer.prompt();
 */
 
-// functions to write file name logo.svg 
+// functions to write file name inside folder example/logo-ex.svg 
 // err =>  err? console.log(err)
 // output text  "Generated Logo.svg is printed in the command line"
 
