@@ -14,14 +14,14 @@ inquirer.prompt([
 .catch((err) => console.error(err)) */
 // create error for 3 charter length
 
-inquirer.prompt(answers);
-console.log(answers);
-
 // functions to write file name inside folder example/logo-ex.svg 
-// fs.writefile('logo.svg)
+// fs.writefile('logo.svg')
 // err =>  err? console.log(err)
 // console.log("Generated Logo.svg is printed in the command line");
 
 
-// Blank SVG LOGO  with if statements
+// Blank SVG LOGO  with if statements for each option of user input 
+// if user chooses circle put into a string    -->for each answers we writefile (:
+
+
 
