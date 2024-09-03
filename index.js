@@ -2,24 +2,26 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 // function for prompt questions
-/* inquirer.prompt([
-    { type:'input', message:'Input 3 character text', name:'text',(3charecters) },
-    { type:'input', message:'Enter color for your text', name:'textcolor'},
-    { type:'input', message:'Choose hape you would like', choices:['circle,triangle,square'], name:'shape'} ,
-    { type:'input', message:'Enter color for your shape ', name:'shapecolor'},
-    {},
+inquirer.prompt([
+    { type:'input', name:'text', message: 'Input 3 character text',},
+    { type:'input', name:'textcolor', message:'Enter color for your text',},
+    { type:'input', name:'shape', message:'Choose the shape you would like', choices:['circle,triangle,square'],} ,
+    { type:'input', name:'shapecolor', message:'Enter the color for your shape ',},
+    
 ])
-//  .then
+/* 
+.then((answers) =>
+.catch((err) => console.error(err)) */
 // create error for 3 charter length
-inquirer.prompt();
-*/
+
+inquirer.prompt(answers);
+console.log(answers);
 
 // functions to write file name inside folder example/logo-ex.svg 
+// fs.writefile('logo.svg)
 // err =>  err? console.log(err)
-// output text  "Generated Logo.svg is printed in the command line"
+// console.log("Generated Logo.svg is printed in the command line");
 
 
-// Create a class  that all shapes will henharite
-// Parent Class -> 
+// Blank SVG LOGO  with if statements
 
-// fs.writeFile()
