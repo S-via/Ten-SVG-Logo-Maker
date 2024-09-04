@@ -7,10 +7,7 @@ inquirer.prompt([
     { type: 'input', name: 'text', message: 'Input 3 character text' },
     { type: 'input', name: 'textcolor', message: 'Enter color for your text', },
     { type: 'list', name: 'shape', message: 'Choose the shape you would like', choices: ["circle", "triangle", "rectangle",] },
-    { type: 'input', name: 'shapecolor', message: 'Enter the color for your shape' }])
-    .then (answers) => {
-        writeToFile()
-    };
+    { type: 'input', name: 'shapecolor', message: 'Enter the color for your shape' }]);
 // create error for 3 charter length 
 // `` 
 // functions to write file name inside folder examples/logo-ex.svg 
