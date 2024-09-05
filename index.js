@@ -43,11 +43,11 @@ function returnStrings(answers) {
 
 
 function writeToFile() {
-    fs.writeFile('./examples' + returnStrings(answers), shapesArray)
+    fs.writeFile('./examples' + returnStrings(answers))
     if (err) { console.log(err); }
     console.log("Generated Logo.svg is printed in the command line");
 }
   /*   writeToFile('logos.svg',returnStrings(answers));
  */
-writeToFile();
+writeToFile('logos.svg');
 
