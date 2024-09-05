@@ -10,7 +10,7 @@ inquirer.prompt([
   
 // create error for 3 charter length 
 // `` 
-// functions to write file name inside folder examples/logos.svg 
+// write file inside folder examples/logos.svg 
 
 // Blank SVG LOGO  with if statements for each shape option 
 // if user chooses circle/tirangle/rectangle add shapesArray + return string --> then for each answer we writefile (:
