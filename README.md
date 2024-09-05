@@ -16,9 +16,9 @@ SO THAT i dont have to pay a graphic designer.
 
 ## Usage 
 --> After installation<br>
-On the command line we all node index.js , Which you will prompted with 4 questions
+On the command line we all node index.js , Which you will prompted with 4 questions<br>
 (PHOTO GOES HERE)<br>
---> After user has prompt the answers , it will create svg log, Which will be locted inside folder called example/logo.svg
+--> After user has prompt the answers , it will create svg log, Which will be locted inside folder called example/logo.svg<br>
 (PHOTO GOES HERE)
 
 ## Demo
