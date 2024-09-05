@@ -7,13 +7,17 @@ inquirer.prompt([
     { type: 'input', name: 'textColor', message: 'Enter color for your text', },
     { type: 'list', name: 'shape', message: 'Choose the shape you would like', choices: ["circle", "triangle", "rectangle",] },
     { type: 'input', name: 'shapeColor', message: 'Enter the color for your shape' }])
-  
+    .then((answers) => {returnStrings(answers)});
+
+
+
 // create error for 3 charter length 
 // `` 
 // write file inside folder examples/logos.svg 
 
 // Blank SVG LOGO  with if statements for each shape option 
 // if user chooses circle/tirangle/rectangle add shapesArray + return string --> then for each answer we writefile (:
+
 function returnStrings(answers) {
     let shapesArray = '<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">';
 
@@ -28,7 +32,7 @@ function returnStrings(answers) {
     THEN append shapesArray + return THEN write file } */
     else if (answers.shape === "triangle")
         return shapesArray += `
-        <polygon points="150,10 240,180 60,180" fill="${answers.shapecolor}"></polygon><text x="146" y="170" font-size="40" text-anchor="middle" fill="${answers.textcolor}">${answers.text}</text></svg>}
+        <polygon points="150,10 240,180 60,180" fill="${answers.shapecolor}"></polygon><text x="146" y="170" font-size="40" text-anchor="middle" fill="${answers.textcolor}">${answers.text}</text></svg>
         `;
 
 
@@ -36,18 +40,15 @@ function returnStrings(answers) {
     THEN append shapesArray + return THEN write file} */
     else (answers.shape === "rectangle")
     return shapesArray += `
-            <rect x="65" y="40" width="150" height="100" fill="${answers.shapecolor}"></rect><text x="135" y="97" font-size="40" text-anchor="middle" fill="${answers.textcolor}">${answers.text}</text></svg>}
+            <rect x="65" y="40" width="150" height="100" fill="${answers.shapecolor}"></rect><text x="135" y="97" font-size="40" text-anchor="middle" fill="${answers.textcolor}">${answers.text}</text></svg>
             `;
-        }
-        console.log(shapesArray);          // ??
-
-
-function writeToFile() {
-    fs.writeFile('./examples' + returnStrings(answers))
-    if (err) { console.log(err); }
-    console.log("Generated Logo.svg is printed in the command line");
 }
-  /*   writeToFile('logos.svg',returnStrings(answers));
- */
-writeToFile('logos.svg');
+
+/* fs.writeFile('logos.svg'+'./examples', data)
+if (err) { console.log(err); }
+console.log("Generated Logo.svg is printed in the command line"); */
+
+/*   writeToFile('logos.svg',returnStrings(answers));
+*/
+
 
