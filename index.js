@@ -49,5 +49,5 @@ inquirer.prompt([
         if (err) { 
             console.error(err); }
    else {
-console.log("Generated Logo.svg is printed in the command line");  }}); 
+console.log("Generated Logo.svg is printed in the command line");  }});  
 
